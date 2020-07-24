@@ -8,6 +8,60 @@
 	6. Разное
 */
 
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+ 
+  --color-white-opacity-30: #ffffff30;
+  --color-black-opacity-30: #00000030;
+
+  --color-header: #eeeeee;
+  --color-preview-bg-hover: #4d4d4d;
+  --color-social-bg: #e1e1e1;
+  
+  --color-input: #d7dcde;
+  --color-input-hover: #b4b9bb;
+  --color-input-focus: #000000;
+  --color-input-invalid: #e74246;
+
+  --color-button: #eeeeee;
+  --color-button-hover: #dfdfdf;
+  --color-button-active: #d5d5d5;
+  --color-button-shadow: #bfbfbf;
+  --color-button-border: #dbdbdb;
+
+  --color-close: #fecccd;
+  --color-close-hover: #fb565a;
+  --color-close-active: #ffeeee;
+
+  --color-sort: #ededed;
+  --color-sort-hover: #666666;
+  --color-sort-active: #000000;
+
+  --color-radio: #b8b8b8;
+  --color-radio-hover: #4d4d4d;
+  --color-radio-active: #ededed;
+
+  --color-preview-link: #000000;
+  --color-preview-link-hover: #fb565a;
+  --color-preview-link-active: #b2b2b2;
+
+  --color-red: #fb565a;
+  --color-red-hover: #e74246;
+  --color-red-active: #d7373b;
+  --color-red-shadow: #c13135;
+ 
+  --color-green: #00ca74;
+  --color-green-hover: #00bc6c;
+  --color-green-active: #00aa62;
+  --color-green-shadow: #009958;
+ 
+  --color-yellow: #efc84a;
+  --color-yellow-hover: #eab534;
+  --color-yellow-active: #e5a722;
+  --color-yellow-shadow: #ce961f;
+}
+
 @font-face {
 	font-family: "font";
 	src: url(../fonts/font.woff);
