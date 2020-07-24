@@ -1,13 +1,3 @@
-/*
-	Порядок сортировки CSS свойств
-	1. Позиционирование
-	2. Блочная модель
-	3. Типографика
-	4. Оформление
-	5. Анимация
-	6. Разное
-*/
-
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
@@ -63,9 +53,21 @@
 }
 
 @font-face {
-	font-family: "font";
-	src: url(../fonts/font.woff);
-	src: url(../fonts/font.woff2);
+	font-family: "roboto";
+	src: url(../fonts/roboto.woff);
+	src: url(../fonts/roboto.woff2);
+}
+
+@font-face {
+	font-family: "robotobold";
+	src: url(../fonts/robotobold.woff);
+	src: url(../fonts/robotobold.woff2);
+}
+
+@font-face {
+	font-family: "robotomedium";
+	src: url(../fonts/robotomedium.woff);
+	src: url(../fonts/robotomedium.woff2);
 }
 
 html {
@@ -83,7 +85,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Font", Arial, sans-serif;
+	font-family: "roboto", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
