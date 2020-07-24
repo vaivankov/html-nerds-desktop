@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Nёrd's</title>
 </head>
+
 <body>
 
   <header class="site-header">
-  
+
     <div class="container">
 
       <div class="main-logo">
@@ -46,19 +48,57 @@
       </div>
 
     </div>
-  
+
   </header>
 
 
   <main>
 
 
-    <section></section>
+    <section class="features">
+
+      <div class="container">
+
+        <div class="features__information">
+          <span class="features__slogan">Долго, дорого,<br>скрупулезно.</span>
+          <span class="features__slogan-explanation">Математически выверенный дизайн<br>для вашего сайта или мобильного
+            приложения.</span>
+          <button class="button button--red">Узнать больше</button>
+        </div>
+
+        <div class="features__image-wrapper">
+          <img class="features__image" width="698" height="413" src="img/index-slider-slide1.png" alt="Три летящих телефона">
+        </div>
+
+        <div class="features__slider">
+          <ul class="features__slider">
+            <li class="features__slider-wrapper">
+              <button class="slider-button" type="button" data-url="img/index-slider-slide1.png" data-slogan="Долго, дорого,<br>скрупулезно." data-slogan-explanation="Математически выверенный дизайн<br>для вашего сайта или мобильного приложения." data-img-alt="Три летящих телефона" onclick="changeSlide()">
+                <span class="visually-hidden">Слайд 1</span>
+              </button>
+            </li>
+            <li>
+              <button class="slider-button" type="button" data-url="img/index-slider-slide2.png" data-slogan="Любим математику<br>как никто другой" data-slogan-explanation="Никакого креатива, только математические формулы для расчета идеальных пропорций." data-img-alt="Два монитора, стоящие друг к другу тыльной стороной" onclick="changeSlide()">
+                <span class="visually-hidden">Слайд 2</span>
+              </button>
+            </li>
+            <li>
+              <button class="slider-button" type="button" data-url="img/index-slider-slide3.png" data-slogan="Только ночь,<br>только хардкор" data-slogan-explanation="Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается." data-img-alt="Летящий планшет и телефон" onclick="changeSlide()">
+                <span class="visually-hidden">Слайд 3</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </section>
 
 
   </main>
 
-  
+
   <footer></footer>
 
 
@@ -66,4 +106,5 @@
   <script src="js/variables.js"></script>
 
 </body>
+
 </html>
