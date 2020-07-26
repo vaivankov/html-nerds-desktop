@@ -13,11 +13,11 @@
 
   <h1 class="visually-hidden">Сайт дизайн-студии Nёrd's</h1>
 
-  <header class="site-header">
+  <header class="site-header-wrapper">
 
     <h2 class="visually-hidden">Шапка сайта</h2>
 
-    <div class="container">
+    <div class="container site-header">
 
       <div class="main-logo">
         <img class="main-logo__image" width="160" height="65" src="svg/nerds-logo.svg" alt="Логотип компании Nёrd's">
@@ -44,8 +44,10 @@
         <ul class="user-navigation">
           <li class="user-navigation__item-wrapper">
             <a class="link" href="#">
-              <img class="link__image" width="21" height="20" src="svg/basket.svg" alt="Иконка корзины">
-              <span class="link__text">Корзина</span>
+              <div class="image-wrapper">
+                <img class="link__image" width="21" height="20" src="svg/basket.svg" alt="Иконка корзины">
+                <span class="link__text">Корзина</span>
+              </div>
             </a>
           </li>
         </ul>
@@ -59,11 +61,11 @@
   <main>
 
 
-    <section class="features">
+    <section class="features-wrapper">
 
       <h2 class="visually-hidden">Преимущества компании</h2>
 
-      <div class="container">
+      <div class="container features">
 
         <div class="features__information">
           <div class="features__slogan">Долго, дорого,<br>скрупулезно.</div>
@@ -183,8 +185,12 @@
 
           <h3 class="visually-hidden">Компания в цифрах</h3>
 
-          <img class="company-in-numbers__image" width="360" height="208" src="img/nerds-illustration.png"
-            alt="Логотип компании в украшениях">
+          <div class="image-wrapper">
+            <div class="image-wrapper__background">
+              <img class="company-in-numbers__image" width="360" height="208" src="img/nerds-illustration.png"
+                alt="Логотип компании в украшениях">
+            </div>
+          </div>
           <div class="company-in-numbers__list-title">С 2004 года любим точность во всем:</div>
           <ul class="company-in-numbers__list">
             <li class="company-in-numbers__list-item">
@@ -214,27 +220,19 @@
       <div class="container">
 
         <div class="image-wrapper">
-          <div class="image-wrapper__background">
-            <img width="199" height="68" src="svg/logo-htmlacademy.svg">
-          </div>
+          <img width="199" height="68" src="svg/logo-htmlacademy.svg">
         </div>
 
         <div class="image-wrapper">
-          <div class="image-wrapper__background">
-            <img width="209" height="90" src="svg/logo-barbershop.svg">
-          </div>
+          <img width="209" height="90" src="svg/logo-barbershop.svg">
         </div>
 
         <div class="image-wrapper">
-          <div class="image-wrapper__background">
-            <img width="185" height="52" src="svg/logo-pink.svg">
-          </div>
+          <img width="185" height="52" src="svg/logo-pink.svg">
         </div>
 
         <div class="image-wrapper">
-          <div class="image-wrapper__background">
-            <img width="173" height="84" src="svg/logo-mishka.svg">
-          </div>
+          <img width="173" height="84" src="svg/logo-mishka.svg">
         </div>
 
       </div>

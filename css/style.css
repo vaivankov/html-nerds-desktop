@@ -116,3 +116,277 @@ img {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+.container {
+	margin: 0 auto;
+	width: 1090px;
+}
+
+.site-header-wrapper {
+  background-color: var(--color-header);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 150px;
+}
+
+.main-logo {
+}
+.main-logo__image {
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  min-width: 450px;
+}
+
+.user-navigation__item-wrapper,
+.site-navigation__item-wrapper {
+  text-transform: uppercase;
+  font-family: "robotobold";
+  font-size: 15px;
+  
+  list-style: none;
+}
+
+.link:hover {
+  color: var(--color-preview-link-hover);
+
+  cursor: pointer;
+}
+
+.link:active {
+  color: var(--color-preview-link-active);
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.link__image {
+  margin-right: 20px;
+}
+
+.link__text {
+}
+
+.features-wrapper {
+  background-color: var(--color-header);
+}
+
+.features {
+  display: flex;
+}
+
+.features__information {
+}
+.features__slogan {
+}
+.features__slogan-explanation {
+}
+.button {
+}
+.button--red {
+}
+.features__image-wrapper {
+}
+.features__image {
+}
+.features__slider {
+}
+.features__slider-wrapper {
+}
+.slider-button {
+}
+.offer {
+}
+.offer-item {
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper__background {
+  display: flex;
+
+  background-color: var(--color-social-bg);
+}
+
+.offer-item__title {
+}
+.offer-item__text {
+}
+.offer-item__button {
+}
+.button--green {
+}
+.button--yellow {
+}
+.about {
+}
+.company-info {
+}
+.company-info__title {
+}
+.company-info__text {
+}
+.company-info__list-title {
+}
+.company-info__list {
+}
+.company-info__list-item {
+}
+.company-in-numbers {
+}
+.company-in-numbers__image {
+}
+.company-in-numbers__list-title {
+}
+.company-in-numbers__list {
+}
+.company-in-numbers__list-item {
+}
+.company-in-numbers__percent {
+}
+.company-in-numbers__text {
+}
+.projects {
+}
+.map {
+}
+.feedback {
+}
+.feedback__title {
+}
+.feedback__adress {
+}
+.feedback__tel {
+}
+.feedback__button {
+}
+.footer {
+}
+.social {
+}
+.button--rounded {
+}
+.discount {
+}
+.discount__slogan {
+}
+.discount__slogan-explanation {
+}
+.modal {
+}
+.write-us {
+}
+.write-us__line {
+}
+.write-us__line--space-between {
+}
+.write-us__title {
+}
+.write-us__close {
+}
+.write-us__cell {
+}
+.input-title {
+}
+.input {
+}
+.write-us__line--flex-start {
+}
+.write-us__button {
+}
+.main-title {
+}
+.main-title__text {
+}
+.examples {
+}
+.sort-wrapper {
+}
+.sort {
+}
+.fieldset {
+}
+.fieldset__title {
+}
+.price-slider {
+}
+.price-slider-min {
+}
+.price-slider-max {
+}
+.price-input-wrapper {
+}
+.price-input {
+}
+.fieldset__list {
+}
+.radio-label {
+}
+.radio-indicator {
+}
+.checkbox-label {
+}
+.checkbox-indicator {
+}
+.button--gray {
+}
+.results-wrapper {
+}
+.results {
+}
+.results__header {
+}
+.result-sort {
+}
+.sort-title {
+}
+.sort-by {
+}
+.sort-by--active {
+}
+.sort-direction {
+}
+.arrow-down {
+}
+.arrow--active {
+}
+.arrow-up {
+}
+.results__body {
+}
+.preview {
+}
+.preview__header {
+}
+.preview__header-dot {
+}
+.preview__popup {
+}
+.preview__popup-content {
+}
+.preview__title {
+}
+.preview__text {
+}
+.results__controls {
+}
+.button--current {
+}
