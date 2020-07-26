@@ -7,7 +7,7 @@
 
 	--color-header: #eeeeee;
 	--color-preview-bg-hover: #4d4d4d;
-	--color-social-bg: #e1e1e1;
+	--color-social-bg: #bbbbbb;
 
 	--color-input: #d7dcde;
 	--color-input-hover: #b4b9bb;
@@ -568,17 +568,58 @@ img {
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 220px;
 }
+
 .social {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
+
+.social__item {
+  margin-right: 10px;
+}
+
 .button--rounded {
+  border-radius: 50%;
+
+  width: 80px;
+  height: 80px;
+
+  background-color: var(--color-social-bg);
+
+  opacity: 0.3;
 }
+
+.button--rounded:focus,
+.button--rounded:hover {
+  opacity: 1;
+}
+
+.button--rounded:active .social__image {
+  opacity: 0.3;
+}
+
 .discount {
+  width: 760px;
 }
+
 .discount__slogan {
+  font-family: "robotobold";
+  font-size: 36px;
 }
+
 .discount__slogan-explanation {
+  margin-top: 20px;
 }
+
 .modal {
 }
 .write-us {
