@@ -382,7 +382,7 @@ img {
 .about {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0 80px 0;
+  padding: 40px 0 70px 0;
 
   border-top: 2px solid var(--color-black-opacity-30);
 }
@@ -485,7 +485,46 @@ img {
 }
 
 .projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  min-height: 185px;
+
+  border-top: 2px solid var(--color-black-opacity-30);
+  border-bottom: 2px solid var(--color-black-opacity-30);
 }
+
+.projects__container {
+  position: relative;
+
+  width: 280px;
+}
+
+.projects__container:not(:first-of-type)::before {
+  position: absolute;
+  top: 65px;
+  left: 0;
+
+  height: 50px;
+  width: 1px;
+  border: 1px solid var(--color-black-opacity-30);
+
+  content: '';
+}
+
+.projects__image {
+  opacity: 0.3;
+}
+
+.projects__container:hover .projects__image {
+  opacity: 1;
+}
+
+.projects__container:active .projects__image {
+  opacity: 0.1;
+}
+
 .map {
 }
 .feedback {
