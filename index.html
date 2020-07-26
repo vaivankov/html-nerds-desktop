@@ -240,27 +240,27 @@
     <div class="container">
 
       <div class="social">
-  
+
         <ul class="social">
           <li>
             <a class="image-wrapper button button--red button--rounded" href="#">
               <img width="26" height="15" src="svg/vk-icon.svg">
             </a>
           </li>
-  
+
           <li>
             <a class="image-wrapper button button--red button--rounded" href="#">
               <img width="12" height="22" src="svg/fb-icon.svg">
             </a>
           </li>
-  
+
           <li>
             <a class="image-wrapper button button--red button--rounded" href="#">
               <img width="21" height="21" src="svg/insta-icon.svg">
             </a>
           </li>
         </ul>
-  
+
       </div>
 
       <div class="discount">
@@ -272,6 +272,50 @@
 
   </footer>
 
+  <div class="modal write-us">
+
+    <div class="write-us__line write-us__line--space-between">
+      <span class="write-us__title">Напишите нам</span>
+      <button class="write-us__close button">
+        <div class="image-wrapper">
+          <img width="21" height="21" src="svg/close-cross.svg" alt="Иконка закрытия">
+        </div>
+      </button>
+    </div>
+
+    <form action="https://echo.htmlacademy.ru" method="POST">
+
+      <div class="write-us__line write-us__line--space-between">
+
+        <div class="write-us__cell">
+          <label class="input-title" for="write-us__name">Ваше имя:</label>
+          <input class="input" placeholder="Имя и фамилия" type="name" name="name" id="write-us__name" required>
+        </div>
+
+        <div class="write-us__cell">
+          <label class="input-title" for="write-us__email">Ваш e-mail:</label>
+          <input class="input" placeholder="yourmail@mail.com" type="email" name="email" id="write-us__email" required>
+        </div>
+
+      </div>
+
+      <div class="write-us__line">
+
+        <div class="write-us__cell">
+          <label class="input-title" for="write-us__textarea">Тест письма:</label>
+          <textarea class="input" placeholder="В свободной форме" type="text" name="text" id="write-us__textarea"
+            cols="30" rows="10" required></textarea>
+        </div>
+
+      </div>
+
+      <div class="write-us__line write-us__line--flex-start">
+        <button class="write-us__button" type="submit">Отправить</button>
+      </div>
+
+    </form>
+
+  </div>
 
   <!-- <script src="js/func__.js"></script> -->
   <script src="js/variables.js"></script>
