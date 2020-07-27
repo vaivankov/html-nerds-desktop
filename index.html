@@ -234,7 +234,7 @@
 
         <div class="feedback">
           <div class="feedback__title">Nёrds design studio</div>
-          <div class="feedback__adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</div>
+          <div class="feedback__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</div>
           <div class="feedback__tel">
             <a class="feedback__tel link" href="tel:+74954959595">тел. +7 (495) 495-95-95</a>
           </div>
@@ -285,7 +285,7 @@
 
   <div class="modal write-us">
 
-    <div class="write-us__line write-us__line--space-between">
+    <div class="write-us__line write-us__line--header">
       <span class="write-us__title">Напишите нам</span>
       <button class="write-us__close button">
         <div class="image-wrapper">
@@ -294,9 +294,9 @@
       </button>
     </div>
 
-    <form action="https://echo.htmlacademy.ru" method="POST">
+    <form class="write-us__form" action="https://echo.htmlacademy.ru" method="POST">
 
-      <div class="write-us__line write-us__line--space-between">
+      <div class="write-us__line write-us__line--contacts">
 
         <div class="write-us__cell">
           <label class="input-title" for="write-us__name">Ваше имя:</label>
@@ -310,21 +310,21 @@
 
       </div>
 
-      <div class="write-us__line">
+      <div class="write-us__line write-us__line--message">
 
         <div class="write-us__cell">
           <label class="input-title" for="write-us__textarea">Тест письма:</label>
-          <textarea class="input" placeholder="В свободной форме" type="text" name="text" id="write-us__textarea"
-            cols="30" rows="10" required></textarea>
+          <textarea class="input write-us__textarea" placeholder="В свободной форме" type="text" name="text" id="write-us__textarea"
+            cols="30" rows="20" required></textarea>
         </div>
 
       </div>
 
-      <div class="write-us__line write-us__line--flex-start">
-        <button class="write-us__button" type="submit">Отправить</button>
+      <div class="write-us__line write-us__line--button">
+        <button class="write-us__button button button--red" type="submit">Отправить</button>
       </div>
 
-    </form>
+    </for>
 
   </div>
 
