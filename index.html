@@ -19,9 +19,9 @@
 
     <div class="container site-header">
 
-      <div class="main-logo">
+      <a class="main-logo" href="index.html">
         <img class="main-logo__image" width="160" height="65" src="svg/nerds-logo.svg" alt="Логотип компании Nёrd's">
-      </div>
+      </a>
 
       <div class="site-navigation">
         <ul class="site-navigation">
@@ -238,7 +238,7 @@
           <div class="feedback__tel">
             <a class="feedback__tel link" href="tel:+74954959595">тел. +7 (495) 495-95-95</a>
           </div>
-          <button class="feedback__button button button--red" type="button">Напишите нам</button>
+          <button class="feedback__button button button--red" type="button" data-window=".write-us">Напишите нам</button>
         </div>
 
       </div>
@@ -287,7 +287,7 @@
 
     <div class="write-us__line write-us__line--header">
       <span class="write-us__title">Напишите нам</span>
-      <button class="write-us__close button">
+      <button class="write-us__close button" data-window=".write-us">
         <div class="image-wrapper">
           <img width="21" height="21" src="svg/close-cross.svg" alt="Иконка закрытия">
         </div>
@@ -328,8 +328,10 @@
 
   </div>
 
-  <!-- <script src="js/func__.js"></script> -->
   <script src="js/variables.js"></script>
+  <script src="js/func__closeModal.js"></script>
+  <script src="js/func__showModal.js"></script>
+  <!-- <script src="js/func__.js"></script> -->
 
 </body>
 

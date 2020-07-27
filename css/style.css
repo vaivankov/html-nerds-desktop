@@ -498,7 +498,7 @@ img {
 .projects__container {
   position: relative;
 
-  width: 280px;
+  width: 290px;
 }
 
 .projects__container:not(:first-of-type)::before {
@@ -523,6 +523,10 @@ img {
 
 .projects__container:active .projects__image {
   opacity: 0.1;
+}
+
+.projects__container:focus::before {
+  display: none;
 }
 
 .map {
@@ -635,6 +639,8 @@ img {
   width: 960px;
   
   background-color: var(--color-white);
+
+  display: none;
 }
 
 .write-us__form {
@@ -811,4 +817,7 @@ img {
 .results__controls {
 }
 .button--current {
+}
+.show {
+  display: block;
 }
