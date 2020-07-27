@@ -82,28 +82,37 @@
         <div class="features__slider">
           <ul class="features__slider">
             <li class="features__slider-wrapper">
-              <button class="button button--slider button--slider-current" type="button"
-                data-url="img/index-slider-slide1.png" data-slogan="Долго, дорого,<br>скрупулезно."
-                data-slogan-explanation="Математически выверенный дизайн<br>для вашего сайта или мобильного приложения."
-                data-img-alt="Три летящих телефона" onclick="changeSlide()">
+              <label>
                 <span class="visually-hidden">Слайд 1</span>
-              </button>
+                <input class="visually-hidden features-slider" name="features-slider" type="radio"
+                  data-url="img/index-slider-slide1.png" data-slogan="Долго, дорого,<br>скрупулезно."
+                  data-slogan-explanation="Математически выверенный дизайн<br>для вашего сайта или мобильного приложения."
+                  data-img-alt="Три летящих телефона" onclick="changeSlide()" checked>
+                </input>
+                <span class="radio-indicator button button--slider"></span>
+              </label>
             </li>
             <li class="features__slider-wrapper">
-              <button class="button button--slider" type="button" data-url="img/index-slider-slide2.png"
-                data-slogan="Любим математику<br>как никто другой"
-                data-slogan-explanation="Никакого креатива, только математические формулы для расчета идеальных пропорций."
-                data-img-alt="Два монитора, стоящие друг к другу тыльной стороной" onclick="changeSlide()">
+              <label>
                 <span class="visually-hidden">Слайд 2</span>
-              </button>
+                <input class="visually-hidden features-slider" name="features-slider" type="radio"
+                  data-url="img/index-slider-slide2.png" data-slogan="Любим математику<br>как никто другой"
+                  data-slogan-explanation="Никакого креатива, только математические формулы <br> для расчета идеальных пропорций."
+                  data-img-alt="Два монитора, стоящие друг к другу тыльной стороной" onclick="changeSlide()">
+                </input>
+                <span class="radio-indicator button button--slider"></span>
+              </label>
             </li>
             <li class="features__slider-wrapper">
-              <button class="button button--slider" type="button" data-url="img/index-slider-slide3.png"
-                data-slogan="Только ночь,<br>только хардкор"
-                data-slogan-explanation="Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается."
-                data-img-alt="Летящий планшет и телефон" onclick="changeSlide()">
+              <label>
                 <span class="visually-hidden">Слайд 3</span>
-              </button>
+                <input class="visually-hidden features-slider" name="features-slider" type="radio"
+                  data-url="img/index-slider-slide3.png" data-slogan="Только ночь,<br>только хардкор"
+                  data-slogan-explanation="Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается."
+                  data-img-alt="Летящий планшет и телефон" onclick="changeSlide()">
+                </input>
+                <span class="radio-indicator button button--slider"></span>
+              </label>
             </li>
           </ul>
         </div>
@@ -238,7 +247,8 @@
           <div class="feedback__tel">
             <a class="feedback__tel link" href="tel:+74954959595">тел. +7 (495) 495-95-95</a>
           </div>
-          <button class="feedback__button button button--red" type="button" data-window=".write-us">Напишите нам</button>
+          <button class="feedback__button button button--red" type="button" data-window=".write-us">Напишите
+            нам</button>
         </div>
 
       </div>
@@ -314,8 +324,8 @@
 
         <div class="write-us__cell">
           <label class="input-title" for="write-us__textarea">Тест письма:</label>
-          <textarea class="input write-us__textarea" placeholder="В свободной форме" type="text" name="text" id="write-us__textarea"
-            cols="30" rows="20" required></textarea>
+          <textarea class="input write-us__textarea" placeholder="В свободной форме" type="text" name="text"
+            id="write-us__textarea" cols="30" rows="20" required></textarea>
         </div>
 
       </div>
@@ -324,13 +334,14 @@
         <button class="write-us__button button button--red" type="submit">Отправить</button>
       </div>
 
-    </for>
+      </for>
 
   </div>
 
   <script src="js/variables.js"></script>
   <script src="js/func__closeModal.js"></script>
   <script src="js/func__showModal.js"></script>
+  <script src="js/func__changeSlide.js"></script>
   <!-- <script src="js/func__.js"></script> -->
 
 </body>

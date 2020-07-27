@@ -101,7 +101,7 @@ img {
 	height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
 	position: absolute;
 
 	width: 1px;
@@ -194,6 +194,8 @@ img {
 
 .features__information {
   width: 600px;
+
+  z-index: 9;
 }
 
 .features__slogan {
@@ -265,6 +267,7 @@ img {
   padding: 0;
 
 	list-style: none;
+  z-index: 9;
 }
 
 .features__slider-wrapper {
@@ -281,13 +284,18 @@ img {
   position: relative;
 
 	width: 20px;
-	height: 20px;
+  height: 20px;
+
   border-radius: 50%;
 
   background-color: var(--color-white);
 }
 
-.button--slider-current::after {
+.features-slider:focus + .radio-indicator {
+  box-shadow: 0 0 0 2px var(--color-black);
+}
+
+.features-slider:checked + .radio-indicator::after {
   position: absolute;
   top: 50%;
   left: 50%;
