@@ -13,15 +13,15 @@
 
   <h1 class="visually-hidden">Сайт дизайн-студии Nёrd's</h1>
 
-  <header class="site-header">
+  <header class="site-header-wrapper">
 
     <h2 class="visually-hidden">Шапка сайта</h2>
 
-    <div class="container">
+    <div class="container site-header">
 
-      <div class="main-logo">
+      <a class="main-logo" href="index.html">
         <img class="main-logo__image" width="160" height="65" src="svg/nerds-logo.svg" alt="Логотип компании Nёrd's">
-      </div>
+      </a>
 
       <div class="site-navigation">
         <ul class="site-navigation">
@@ -44,8 +44,10 @@
         <ul class="user-navigation">
           <li class="user-navigation__item-wrapper">
             <a class="link" href="#">
-              <img class="link__image" width="21" height="20" src="svg/basket.svg" alt="Иконка корзины">
-              <span class="link__text">Корзина</span>
+              <div class="image-wrapper">
+                <img class="link__image" width="21" height="20" src="svg/basket.svg" alt="Иконка корзины">
+                <span class="link__text">Корзина</span>
+              </div>
             </a>
           </li>
         </ul>
@@ -55,14 +57,15 @@
 
   </header>
 
-
   <main>
 
-    <section class="main-title">
-      <h2 class="main-title__text">Магазин готовых шаблонов</h2>
+    <section class="main-title-wrapper">
+      <div class="container main-title">
+        <h2 class="main-title__text">Магазин готовых шаблонов</h2>
+      </div>
     </section>
 
-    <section class="examples">
+    <section class="container examples">
 
       <div class="sort-wrapper">
 
@@ -138,7 +141,8 @@
                 Галерея
               </label>
               <label class="checkbox-label">
-                <input class="visually-hidden" type="checkbox" name="features-shopping-basket" id=features-shopping-basket">
+                <input class="visually-hidden" type="checkbox" name="features-shopping-basket"
+                  id=features-shopping-basket">
                 <span class="checkbox-indicator"></span>
                 Корзина
               </label>
@@ -159,18 +163,39 @@
         <div class="results">
 
           <div class="results__header">
-          
-            <div class="result-sort">
-              <span class="sort-title">Сортировать:</span>
-              <button class="sort-by sort-by--active">По цене</button>
-              <button class="sort-by">По типу</button>
-              <button class="sort-by">По названию</button>
+
+            <div class="results__title">
+              <span>Сортировать:</span>
             </div>
-          
-            <div class="sort-direction">
-          
-              <div class="arrow-down arrow--active">
-                <button type="button">
+
+            <div class="results__buttons">
+
+              <div class="sort-buttons">
+                <ul class="sort-buttons">
+                  <li>
+                    <input class="visually-hidden sort-by" id="sort-radio__price" type="radio" name="sort-radio" value="price" checked>
+                    <label class="sort-by" for="sort-radio__price">
+                      По цене
+                    </label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden sort-by" id="sort-radio__type" type="radio" name="sort-radio" value="type">
+                    <label class="sort-by" for="sort-radio__type">
+                      По типу
+                    </label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden sort-by" id="sort-radio__name" type="radio" name="sort-radio" value="name">
+                    <label class="sort-by" for="sort-radio__name">
+                      По названию
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="sort-direction">
+
+                <button class="arrow" type="button">
                   <div class="image-wrapper">
                     <svg height="12" width="12" viewBox="0 0 512 512">
                       <path
@@ -178,122 +203,144 @@
                     </svg>
                   </div>
                 </button>
-              </div>
 
-              <div class="arrow-up">
-                <button type="button">
+                <button class="arrow arrow--active" type="button">
                   <div class="image-wrapper">
                     <svg height="12" width="12" viewBox="0 0 512 512">
                       <path d="M508 427L283 53a31 31 0 00-54 0L4 427c-12 21 3 47 27 47h450c24 0 39-26 27-47z" />
                     </svg>
                   </div>
                 </button>
+
               </div>
-                    
+
             </div>
-          
+
           </div>
 
           <div class="results__body">
 
-            <div class="preview">
+            <div class="preview" tabindex="0">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
               </div>
-              <div class="image-wrapper"><img width="360" height="576" src="img/site-preview-sedona.jpg.png"
-                  alt="Скриншот сайта Sedona"></div>
+              <div class="preview__image-wrapper">
+                <img class="preview__image" width="360" height="576" src="img/site-preview-sedona.jpg.png"
+                  alt="Скриншот сайта Sedona">
+              </div>
               <div class="preview__popup">
                 <div class="preview__popup-content">
-                  <div class="preview__title">Sedona</div>
+                  <div class="preview__title">
+                    <a class="link" href="#">Sedona</a>
+                  </div>
                   <div class="preview__text">Информационный сайт для туристов</div>
-                  <button class="button button--red">9 900 руб.</button>
+                  <button class="preview__button button button--red">9 900 руб.</button>
                 </div>
               </div>
             </div>
 
-            <div class="preview">
+            <div class="preview" tabindex="0">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
               </div>
-              <div class="image-wrapper"><img width="360" height="576" src="img/site-preview-pink.jpg.png"
-                  alt="Скриншот сайта Pink"></div>
+              <div class="preview__image-wrapper">
+                <img class="preview__image" width="360" height="576" src="img/site-preview-pink.jpg.png" alt="Скриншот са
+                йта Pink">
+              </div>
               <div class="preview__popup">
                 <div class="preview__popup-content">
-                  <div class="preview__title">Pink App</div>
+                  <div class="preview__title">
+                    <a class="link" href="#">Pink App</a>
+                  </div>
                   <div class="preview__text">Продуктовый лендинг приложения для iOS и Android</div>
-                  <button class="button button--red">9 900 руб.</button>
+                  <button class="preview__button button button--red">9 900 руб.</button>
                 </div>
               </div>
             </div>
 
-            <div class="preview">
+            <div class="preview" tabindex="0">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
               </div>
-              <div class="image-wrapper"><img width="360" height="576" src="img/site-preview-barbershop.jpg.png"
-                  alt="Скриншот сайта барбершоп «Бородинский»"></div>
+              <div class="preview__image-wrapper">
+                <img class="preview__image" width="360" height="576" src="img/site-preview-barbershop.jpg.png"
+                  alt="Скриншот сайта барбершоп «Бородинский»">
+              </div>
               <div class="preview__popup">
                 <div class="preview__popup-content">
-                  <div class="preview__title">Barbershop</div>
+                  <div class="preview__title">
+                    <a class="link" href="#">Barbershop</a>
+                  </div>
                   <div class="preview__text">Сайт салона красоты. Для мужчин, да.</div>
-                  <button class="button button--red">9 900 руб.</button>
+                  <button class="preview__button button button--red">9 900 руб.</button>
                 </div>
               </div>
             </div>
 
-            <div class="preview">
+            <div class="preview" tabindex="0">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
               </div>
-              <div class="image-wrapper"><img width="360" height="576" src="img/site-preview-mishka.jpg.png"
-                  alt="Скриншот сайта Mishka"></div>
+              <div class="preview__image-wrapper">
+                <img class="preview__image" width="360" height="576" src="img/site-preview-mishka.jpg.png"
+                  alt="Скриншот сайта Mishka">
+              </div>
               <div class="preview__popup">
                 <div class="preview__popup-content">
-                  <div class="preview__title">MISHKA</div>
+                  <div class="preview__title">
+                    <a class="link" href="#">MISHKA</a>
+                  </div>
                   <div class="preview__text">Интернет-магазин вязаных игрушек</div>
-                  <button class="button button--red">9 900 руб.</button>
+                  <button class="preview__button button button--red">9 900 руб.</button>
                 </div>
               </div>
             </div>
 
-            <div class="preview">
+            <div class="preview" tabindex="0">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
               </div>
-              <div class="image-wrapper"><img width="360" height="576" src="img/site-preview-aplus.jpg.png"
+              <div class="preview__image-wrapper">
+                <img class="preview__image" width="360" height="576" src="img/site-preview-aplus.jpg.png"
                   alt="Скриншот сайта А+"></div>
               <div class="preview__popup">
                 <div class="preview__popup-content">
-                  <div class="preview__title">A Plus</div>
+                  <div class="preview__title">
+                    <a class="link" href="#">A Plus</a>
+                  </div>
                   <div class="preview__text">Лендинг курсов повышения квалификации</div>
-                  <button class="button button--red">9 900 руб.</button>
+                  <button class="preview__button button button--red">9 900 руб.</button>
                 </div>
               </div>
             </div>
 
-            <div class="preview">
+            <div class="preview" tabindex="0">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
               </div>
-              <div class="image-wrapper"><img width="360" height="576" src="img/site-preview-kvast.jpg.png"
-                  alt="Скриншот сайта Кваст"></div>
+              <div class="preview__image-wrapper">
+                <img class="preview__image" width="360" height="576" src="img/site-preview-kvast.jpg.png"
+                  alt="Скриншот сайта Кваст">
+              </div>
               <div class="preview__popup">
                 <div class="preview__popup-content">
-                  <div class="preview__title">КВАСТ</div>
+                  <div class="preview__title">
+                    <a class="link" href="#">КВАСТ</a>
+                  </div>
                   <div class="preview__text">Промо-сайт производителя крафтового кваса</div>
-                  <button class="button button--red">9 900 руб.</button>
+                  <button class="preview__button button button--red">9 900 руб.</button>
                 </div>
               </div>
             </div>
@@ -317,11 +364,18 @@
 
       <h2 class="visually-hidden">Адрес компании</h2>
 
-      <div class="feedback">
-        <div class="feedback__title">Nёrds design studio</div>
-        <div class="feedback__adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</div>
-        <a class="feedback__tel" href="tel:+74954959595">тел. +7 (495) 495-95-95</a>
-        <button class="feedback__button button button--red" type="button">Напишите нам</button>
+      <div class="container">
+
+        <div class="feedback">
+          <div class="feedback__title">Nёrds design studio</div>
+          <div class="feedback__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</div>
+          <div class="feedback__tel">
+            <a class="feedback__tel link" href="tel:+74954959595">тел. +7 (495) 495-95-95</a>
+          </div>
+          <button class="feedback__button button button--red" type="button" data-window=".write-us">Напишите
+            нам</button>
+        </div>
+
       </div>
 
     </section>
@@ -329,59 +383,55 @@
   </main>
 
 
-  <footer class="footer">
+  <footer class="container footer">
 
     <h2 class="visually-hidden">Подвал сайта</h2>
 
-    <div class="container">
+    <div class="social">
 
-      <div class="social">
+      <ul class="social">
+        <li class="social__item">
+          <a class="image-wrapper button button--rounded button--red" href="#">
+            <img class="social__image" width="26" height="15" src="svg/vk-icon.svg">
+          </a>
+        </li>
 
-        <ul class="social">
-          <li>
-            <a class="image-wrapper button button--red button--rounded" href="#">
-              <img width="26" height="15" src="svg/vk-icon.svg">
-            </a>
-          </li>
+        <li class="social__item">
+          <a class="image-wrapper button button--rounded button--red" href="#">
+            <img class="social__image" width="12" height="22" src="svg/fb-icon.svg">
+          </a>
+        </li>
 
-          <li>
-            <a class="image-wrapper button button--red button--rounded" href="#">
-              <img width="12" height="22" src="svg/fb-icon.svg">
-            </a>
-          </li>
+        <li class="social__item">
+          <a class="image-wrapper button button--rounded button--red" href="#">
+            <img class="social__image" width="21" height="21" src="svg/insta-icon.svg">
+          </a>
+        </li>
+      </ul>
 
-          <li>
-            <a class="image-wrapper button button--red button--rounded" href="#">
-              <img width="21" height="21" src="svg/insta-icon.svg">
-            </a>
-          </li>
-        </ul>
+    </div>
 
-      </div>
-
-      <div class="discount">
-        <div class="discount__slogan">Давайте дружить, это выгодно!</div>
-        <div class="discount__slogan-explanation">Скидка 10% для друзей из социальных сетей.</div>
-      </div>
-
+    <div class="discount">
+      <div class="discount__slogan">Давайте дружить, это выгодно!</div>
+      <div class="discount__slogan-explanation">Скидка 10% для друзей из социальных сетей.</div>
     </div>
 
   </footer>
 
   <div class="modal write-us">
 
-    <div class="write-us__line write-us__line--space-between">
+    <div class="write-us__line write-us__line--header">
       <span class="write-us__title">Напишите нам</span>
-      <button class="write-us__close button">
+      <button class="write-us__close button" data-window=".write-us">
         <div class="image-wrapper">
           <img width="21" height="21" src="svg/close-cross.svg" alt="Иконка закрытия">
         </div>
       </button>
     </div>
 
-    <form action="https://echo.htmlacademy.ru" method="POST">
+    <form class="write-us__form" action="https://echo.htmlacademy.ru" method="POST">
 
-      <div class="write-us__line write-us__line--space-between">
+      <div class="write-us__line write-us__line--contacts">
 
         <div class="write-us__cell">
           <label class="input-title" for="write-us__name">Ваше имя:</label>
@@ -395,26 +445,29 @@
 
       </div>
 
-      <div class="write-us__line">
+      <div class="write-us__line write-us__line--message">
 
         <div class="write-us__cell">
           <label class="input-title" for="write-us__textarea">Тест письма:</label>
-          <textarea class="input" placeholder="В свободной форме" type="text" name="text" id="write-us__textarea"
-            cols="30" rows="10" required></textarea>
+          <textarea class="input write-us__textarea" placeholder="В свободной форме" type="text" name="text"
+            id="write-us__textarea" cols="30" rows="20" required></textarea>
         </div>
 
       </div>
 
-      <div class="write-us__line write-us__line--flex-start">
-        <button class="write-us__button" type="submit">Отправить</button>
+      <div class="write-us__line write-us__line--button">
+        <button class="write-us__button button button--red" type="submit">Отправить</button>
       </div>
 
-    </form>
+      </for>
 
   </div>
 
-  <!-- <script src="js/func__.js"></script> -->
   <script src="js/variables.js"></script>
+  <script src="js/func__closeModal.js"></script>
+  <script src="js/func__showModal.js"></script>
+  <script src="js/func__changeSlide.js"></script>
+  <!-- <script src="js/func__.js"></script> -->
 
 </body>
 
