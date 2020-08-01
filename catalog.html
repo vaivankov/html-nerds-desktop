@@ -83,10 +83,10 @@
               </div>
               <div class="price-input-wrapper">
                 <div class="price-input">
-                  <label for="price-min">От</label>
-                  <input value="0" name="price-min" min="0" max="20000" step="100" type="number" id="price-min">
-                  <label for="price-max">До</label>
-                  <input value="15000" name="price-max" min="0" max="20000" step="100" type="number" id="price-max">
+                  <label class="price-input__label" for="price-min">От</label>
+                  <input class="button button--gray button--input price-min" value="0" name="price-min" min="0" max="20000" step="100" type="number" id="price-min">
+                  <label class="price-input__label" for="price-max">До</label>
+                  <input class="button button--gray button--input price-max" value="15000" name="price-max" min="0" max="20000" step="100" type="number" id="price-max">
                 </div>
               </div>
             </fieldset>
@@ -173,19 +173,22 @@
               <div class="sort-buttons">
                 <ul class="sort-buttons">
                   <li>
-                    <input class="visually-hidden sort-by" id="sort-radio__price" type="radio" name="sort-radio" value="price" checked>
+                    <input class="visually-hidden sort-by" id="sort-radio__price" type="radio" name="sort-radio"
+                      value="price" checked>
                     <label class="sort-by" for="sort-radio__price">
                       По цене
                     </label>
                   </li>
                   <li>
-                    <input class="visually-hidden sort-by" id="sort-radio__type" type="radio" name="sort-radio" value="type">
+                    <input class="visually-hidden sort-by" id="sort-radio__type" type="radio" name="sort-radio"
+                      value="type">
                     <label class="sort-by" for="sort-radio__type">
                       По типу
                     </label>
                   </li>
                   <li>
-                    <input class="visually-hidden sort-by" id="sort-radio__name" type="radio" name="sort-radio" value="name">
+                    <input class="visually-hidden sort-by" id="sort-radio__name" type="radio" name="sort-radio"
+                      value="name">
                     <label class="sort-by" for="sort-radio__name">
                       По названию
                     </label>
@@ -195,22 +198,27 @@
 
               <div class="sort-direction">
 
-                <button class="arrow" type="button">
-                  <div class="image-wrapper">
-                    <svg height="12" width="12" viewBox="0 0 512 512">
-                      <path
-                        d="M 508,84.231546 283,458.23155 a 31,31 0 0 1 -54,0 L 4,84.231546 c -12,-21 3,-47 27,-47 h 450 c 24,0 39,26 27,47 z" />
-                    </svg>
-                  </div>
-                </button>
-
-                <button class="arrow arrow--active" type="button">
-                  <div class="image-wrapper">
-                    <svg height="12" width="12" viewBox="0 0 512 512">
-                      <path d="M508 427L283 53a31 31 0 00-54 0L4 427c-12 21 3 47 27 47h450c24 0 39-26 27-47z" />
-                    </svg>
-                  </div>
-                </button>
+                <ul class="sort-direction">
+                  <li>
+                    <label class="arrow" for="sort-radio__inc">
+                      <input class="visually-hidden arrow-input" id="sort-radio__inc" type="radio" name="sort-arrow" value="increase"
+                        checked>
+                      <span class="visually-hidden"> По возрастанию </span>
+                      <svg height="10" width="10">
+                        <polygon points="10,0 5,10 0,0" />
+                      </svg>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="arrow" for="sort-radio__dec">
+                      <input class="visually-hidden arrow-input" id="sort-radio__dec" type="radio" name="sort-arrow" value="decrease">
+                      <span class="visually-hidden"> По убыванию </span>
+                      <svg height="10" width="10">
+                        <polygon points="10,10 5,0 0,10" />
+                      </svg>
+                    </label>
+                  </li>
+                </ul>
 
               </div>
 
@@ -220,7 +228,7 @@
 
           <div class="results__body">
 
-            <div class="preview" tabindex="0">
+            <div class="preview">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
@@ -233,15 +241,15 @@
               <div class="preview__popup">
                 <div class="preview__popup-content">
                   <div class="preview__title">
-                    <a class="link" href="#">Sedona</a>
+                    <a class="link">Sedona</a>
                   </div>
                   <div class="preview__text">Информационный сайт для туристов</div>
-                  <button class="preview__button button button--red">9 900 руб.</button>
+                  <a class="preview__button button button--red">9 900 руб.</a>
                 </div>
               </div>
             </div>
 
-            <div class="preview" tabindex="0">
+            <div class="preview">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
@@ -254,15 +262,15 @@
               <div class="preview__popup">
                 <div class="preview__popup-content">
                   <div class="preview__title">
-                    <a class="link" href="#">Pink App</a>
+                    <a class="link">Pink App</a>
                   </div>
                   <div class="preview__text">Продуктовый лендинг приложения для iOS и Android</div>
-                  <button class="preview__button button button--red">9 900 руб.</button>
+                  <a class="preview__button button button--red">9 900 руб.</a>
                 </div>
               </div>
             </div>
 
-            <div class="preview" tabindex="0">
+            <div class="preview">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
@@ -275,15 +283,15 @@
               <div class="preview__popup">
                 <div class="preview__popup-content">
                   <div class="preview__title">
-                    <a class="link" href="#">Barbershop</a>
+                    <a class="link">Barbershop</a>
                   </div>
                   <div class="preview__text">Сайт салона красоты. Для мужчин, да.</div>
-                  <button class="preview__button button button--red">9 900 руб.</button>
+                  <a class="preview__button button button--red">9 900 руб.</a>
                 </div>
               </div>
             </div>
 
-            <div class="preview" tabindex="0">
+            <div class="preview">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
@@ -296,15 +304,15 @@
               <div class="preview__popup">
                 <div class="preview__popup-content">
                   <div class="preview__title">
-                    <a class="link" href="#">MISHKA</a>
+                    <a class="link">MISHKA</a>
                   </div>
                   <div class="preview__text">Интернет-магазин вязаных игрушек</div>
-                  <button class="preview__button button button--red">9 900 руб.</button>
+                  <a class="preview__button button button--red">9 900 руб.</a>
                 </div>
               </div>
             </div>
 
-            <div class="preview" tabindex="0">
+            <div class="preview">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
@@ -316,15 +324,15 @@
               <div class="preview__popup">
                 <div class="preview__popup-content">
                   <div class="preview__title">
-                    <a class="link" href="#">A Plus</a>
+                    <a class="link">A Plus</a>
                   </div>
                   <div class="preview__text">Лендинг курсов повышения квалификации</div>
-                  <button class="preview__button button button--red">9 900 руб.</button>
+                  <a class="preview__button button button--red">9 900 руб.</a>
                 </div>
               </div>
             </div>
 
-            <div class="preview" tabindex="0">
+            <div class="preview">
               <div class="preview__header">
                 <div class="preview__header-dot"></div>
                 <div class="preview__header-dot"></div>
@@ -337,10 +345,10 @@
               <div class="preview__popup">
                 <div class="preview__popup-content">
                   <div class="preview__title">
-                    <a class="link" href="#">КВАСТ</a>
+                    <a class="link">КВАСТ</a>
                   </div>
                   <div class="preview__text">Промо-сайт производителя крафтового кваса</div>
-                  <button class="preview__button button button--red">9 900 руб.</button>
+                  <a class="preview__button button button--red">9 900 руб.</a>
                 </div>
               </div>
             </div>
@@ -348,10 +356,10 @@
           </div>
 
           <div class="results__controls">
-            <button class="button button--gray button--current" type="button">1</button>
-            <button class="button button--gray" type="button">2</button>
-            <button class="button button--gray" type="button">3</button>
-            <button class="button button--gray" type="button">Следующая</button>
+            <button class="results__button button button--gray button--current" type="button">1</button>
+            <button class="results__button button button--gray" type="button">2</button>
+            <button class="results__button button button--gray" type="button">3</button>
+            <button class="results__button results__button--next button button--gray" type="button">Следующая</button>
           </div>
 
         </div>
