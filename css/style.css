@@ -291,11 +291,11 @@ img {
 	background-color: var(--color-white);
 }
 
-.features-slider:focus + .radio-indicator {
+.features-slider:focus + .button--slider {
 	box-shadow: 0 0 0 2px var(--color-black);
 }
 
-.features-slider:checked + .radio-indicator::after {
+.features-slider:checked + .button--slider::after {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -786,6 +786,12 @@ img {
 .sort {
 }
 
+.sort__submit-btn {
+	margin-top: 40px;
+	width: 100%;
+	height: 50px;
+}
+
 .fieldset {
 	margin: 0;
 	padding: 0;
@@ -793,55 +799,134 @@ img {
 	border: none;
 }
 
+.fieldset--net {
+	margin-top: 55px;
+}
+
+.fieldset--features {
+	margin-top: 40px;
+}
+
+.fieldset--features .fieldset__list-item {
+	height: 40px;
+}
+
 .fieldset__title {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: "robotobold";
 	text-transform: uppercase;
 }
 
 .price-slider {
-  position: relative;
+	position: relative;
 
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  margin-top: 60px;
-  width: 100%;
-  height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 55px;
+	width: 100%;
+	height: 75px;
 
-  background-color: var(--color-sort);
-  border-radius: 5px;
+	background-color: var(--color-sort);
+	border-radius: 5px;
 }
 
-.price-slider-min {
-  position: absolute;
-  
-  width: 90%;
-}
+.price-slider-thumb {
+	position: absolute;
 
-.price-slider-max {
-  position: absolute;
-  
-  width: 90%;
+	width: 90%;
 }
 
 .price-input-wrapper {
-  margin-top: 15px;
+	margin-top: 15px;
 }
 
 .price-input {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .fieldset__list {
+	margin: 0;
+	padding: 0;
+
+	margin-top: 10px;
+
+	list-style: none;
 }
+
+.fieldset__list-item {
+	display: flex;
+	align-items: center;
+}
+
 .radio-label {
+	display: flex;
+	align-items: center;
+	height: 40px;
 }
+
 .radio-indicator {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	width: 25px;
+	height: 25px;
+
+	background-image: url("../svg/radio-off.svg");
 }
+
+.radio-input:checked + .radio-indicator {
+	background-image: url("../svg/radio-on.svg");
+}
+
+.checkbox-indicator {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	width: 27px;
+	height: 23px;
+
+	background-image: url("../svg/checkbox-off.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.checkbox-input:checked + .checkbox-indicator {
+	background-image: url("../svg/checkbox-on.svg");
+}
+
+.checkbox-input:disabled + .checkbox-indicator,
+.radio-input:disabled + .radio-indicator {
+	opacity: 0.1;
+}
+
+.radio-input:focus + .radio-indicator,
+.radio-input:active + .radio-indicator {
+	box-shadow: 0 0 0 2px var(--color-black);
+	border-radius: 50%;
+}
+
+.checkbox-input:focus + .checkbox-indicator,
+.checkbox-input:active + .checkbox-indicator {
+	box-shadow: 0 0 0 2px var(--color-black);
+	border-radius: 5px;
+}
+
+.checkbox-indicator,
+.radio-indicator {
+	opacity: 0.5;
+}
+
+.fieldset__list-item:hover .checkbox-indicator,
+.fieldset__list-item:hover .radio-indicator {
+	opacity: 1;
+}
+
 .checkbox-label {
+	display: flex;
 }
+
 .checkbox-indicator {
 }
 
@@ -849,12 +934,23 @@ img {
 	background-color: var(--color-button);
 }
 
-.button--input {
-  width: 80px;
-  height: 40px;
+.button--gray:hover:not(.button--current) {
+	background-color: var(--color-button-hover);
+}
 
-  text-align: center;
-  font-family: "roboto";
+.button--gray:active:not(.button--current) {
+	color: var(--color-black-opacity-30);
+
+	background-color: var(--color-button-active);
+	box-shadow: inset 0 5px 5px var(--color-black-opacity-30);
+}
+
+.button--input {
+	width: 80px;
+	height: 40px;
+
+	text-align: center;
+	font-family: "roboto";
 }
 
 .button--next {
@@ -1072,10 +1168,11 @@ input.sort-by:focus + label.sort-by {
 
 .results__controls {
 	display: flex;
+	margin-top: 20px;
 }
 
 .results__button {
-  margin-right: 10px;
+	margin-right: 10px;
 	height: 50px;
 	width: 50px;
 }
@@ -1088,13 +1185,15 @@ input.sort-by:focus + label.sort-by {
 	border: 3px solid var(--color-button);
 
 	background-color: var(--color-white);
+
+	cursor: default;
 }
 
 .price-input__label {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 .price-max {
 }
@@ -1103,4 +1202,116 @@ input.sort-by:focus + label.sort-by {
 
 .show {
 	display: block;
+}
+
+.slider-track {
+	position: absolute;
+
+	width: 90%;
+	height: 2px;
+
+	background-color: var(--color-button-active);
+
+	z-index: 2;
+}
+
+.slider-track {
+	--filler-width: calc(var(--max) - var(--min));
+}
+
+.slider-track::before,
+.slider-track::after {
+	position: absolute;
+
+	height: 2px;
+
+	background: var(--color-red);
+
+	content: "";
+	z-index: 4;
+}
+
+.slider-track::before {
+	margin-left: calc(
+		(var(--left-value) - var(--min)) / var(--filler-width) * 100%
+	);
+	width: calc(
+		(var(--right-value) - var(--left-value)) / var(--filler-width) * 100%
+	);
+}
+
+.slider-track::after {
+	margin-left: calc(
+		(var(--right-value) - var(--min)) / var(--filler-width) * 100%
+	);
+	width: calc(
+		(var(--left-value) - var(--right-value)) / var(--filler-width) * 100%
+	);
+}
+
+input[type="range"] {
+	margin: 0;
+
+	font: inherit;
+
+	background: none;
+
+	pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"] {
+	-webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+	position: relative;
+
+	height: 2px;
+	width: 100%;
+
+	background: none;
+	background-color: var(--color-button-active);
+}
+
+input[type="range"]::-moz-range-track {
+	position: relative;
+
+	height: 2px;
+	width: 100%;
+
+	background: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	position: absolute;
+	top: -9px;
+	left: 0;
+
+	width: 20px;
+	height: 23px;
+
+	background-image: url("../svg//filter-button.svg");
+	border: none;
+	border-radius: 0;
+
+	pointer-events: auto;
+	z-index: 9;
+}
+
+input[type="range"]::-moz-range-thumb {
+	position: absolute;
+	top: -9px;
+	left: 0;
+
+	width: 20px;
+	height: 23px;
+
+	background-image: url("../svg//filter-button.svg");
+	border: none;
+	border-radius: 0;
+
+	pointer-events: auto;
+	z-index: 9;
 }
