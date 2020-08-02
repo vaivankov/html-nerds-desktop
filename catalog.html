@@ -75,80 +75,99 @@
 
           <form action="https://echo.htmlacademy.ru" method="POST">
 
-            <fieldset class="fieldset">
+            <fieldset class="fieldset fieldset--price">
               <legend class="fieldset__title">Стоимость:</legend>
               <div class="price-slider">
-                <input class="price-slider-min" value="0" min="0" max="20000" step="100" type="range">
-                <input class="price-slider-max" value="15000" min="0" max="20000" step="100" type="range">
+                <div class="slider-track" style="--left-value: 0; --right-value: 15000; --min: 0; --max: 20000;"></div>
+                <input class="price-slider-thumb" id="left-value" value="0" min="0" max="20000" step="100" type="range">
+                <input class="price-slider-thumb" id="right-value" value="15000" min="0" max="20000" step="100" type="range">
               </div>
               <div class="price-input-wrapper">
                 <div class="price-input">
                   <label class="price-input__label" for="price-min">От</label>
-                  <input class="button button--gray button--input price-min" value="0" name="price-min" min="0" max="20000" step="100" type="number" id="price-min">
+                  <input class="button button--gray button--input price-min" value="0" name="price-min" min="0"
+                    max="20000" step="100" type="number" id="price-min">
                   <label class="price-input__label" for="price-max">До</label>
-                  <input class="button button--gray button--input price-max" value="15000" name="price-max" min="0" max="20000" step="100" type="number" id="price-max">
+                  <input class="button button--gray button--input price-max" value="15000" name="price-max" min="0"
+                    max="20000" step="100" type="number" id="price-max">
                 </div>
               </div>
             </fieldset>
 
-            <fieldset class="fieldset">
+            <fieldset class="fieldset fieldset--net">
               <legend class="fieldset__title">Сетка:</legend>
               <ul class="fieldset__list">
-                <li>
+                <li class="fieldset__list-item">
                   <label class="radio-label">
+                    <input class="radio-input visually-hidden" name="grid-option" type="radio" value="adaptive" checked>
                     <span class="radio-indicator"></span>
-                    <input class="visually-hidden" name="grid-option" type="radio" value="adaptive" checked>
                     Адаптивная
                   </label>
                 </li>
-                <li>
+                <li class="fieldset__list-item">
                   <label class="radio-label">
+                    <input class="radio-input visually-hidden" name="grid-option" type="radio" value="fixed">
                     <span class="radio-indicator"></span>
-                    <input class="visually-hidden" name="grid-option" type="radio" value="fixed">
                     Фиксированная
                   </label>
                 </li>
-                <li>
+                <li class="fieldset__list-item">
                   <label class="radio-label">
+                    <input class="radio-input visually-hidden" name="grid-option" type="radio" value="stretchable">
                     <span class="radio-indicator"></span>
-                    <input class="visually-hidden" name="grid-option" type="radio" value="stretchable">
                     Резиновая
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="fieldset">
+            <fieldset class="fieldset fieldset--features">
               <legend class="fieldset__title">Особенности:</legend>
-              <label class="checkbox-label">
-                <input class="visually-hidden" type="checkbox" name="features-slider" id=features-slider" checked>
-                <span class="checkbox-indicator"></span>
-                Слайдер
-              </label>
-              <label class="checkbox-label">
-                <input class="visually-hidden" type="checkbox" name="features-advantages" id="features-advantages">
-                <span class="checkbox-indicator"></span>
-                Блок преимуществ
-              </label>
-              <label class="checkbox-label">
-                <input class="visually-hidden" type="checkbox" name="features-news" id=features-news" checked>
-                <span class="checkbox-indicator"></span>
-                Новости
-              </label>
-              <label class="checkbox-label">
-                <input class="visually-hidden" type="checkbox" name="features-gallery" id=features-gallery">
-                <span class="checkbox-indicator"></span>
-                Галерея
-              </label>
-              <label class="checkbox-label">
-                <input class="visually-hidden" type="checkbox" name="features-shopping-basket"
-                  id=features-shopping-basket">
-                <span class="checkbox-indicator"></span>
-                Корзина
-              </label>
+              <div class="fieldset__list">
+                <span class="fieldset__list-item">
+                  <label class="checkbox-label">
+                    <input class="checkbox-input visually-hidden" name="features-advantages" type="checkbox"
+                      value="slider" checked>
+                    <span class="checkbox-indicator"></span>
+                    Слайдер
+                  </label>
+                </span>
+                <span class="fieldset__list-item">
+                  <label class="checkbox-label">
+                    <input class="checkbox-input visually-hidden" name="features-advantages" type="checkbox"
+                      value="advantages">
+                    <span class="checkbox-indicator"></span>
+                    Блок преимуществ
+                  </label>
+                </span>
+                <span class="fieldset__list-item">
+                  <label class="checkbox-label">
+                    <input class="checkbox-input visually-hidden" name="features-advantages" type="checkbox"
+                      value="news" checked>
+                    <span class="checkbox-indicator"></span>
+                    Новости
+                  </label>
+                </span>
+                <span class="fieldset__list-item">
+                  <label class="checkbox-label">
+                    <input class="checkbox-input visually-hidden" name="features-advantages" type="checkbox"
+                      value="shopping-basket">
+                    <span class="checkbox-indicator"></span>
+                    Корзина
+                  </label>
+                </span>
+                <span class="fieldset__list-item">
+                  <label class="checkbox-label">
+                    <input class="checkbox-input visually-hidden" name="features-advantages" type="checkbox"
+                      value="gallery">
+                    <span class="checkbox-indicator"></span>
+                    Галерея
+                  </label>
+                </span>
+              </div>
             </fieldset>
 
-            <button class="button button--gray" type="submit">Показать</button>
+            <button class="sort__submit-btn button button--gray" type="submit">Показать</button>
 
           </form>
 
@@ -201,19 +220,20 @@
                 <ul class="sort-direction">
                   <li>
                     <label class="arrow" for="sort-radio__inc">
-                      <input class="visually-hidden arrow-input" id="sort-radio__inc" type="radio" name="sort-arrow" value="increase"
-                        checked>
+                      <input class="visually-hidden arrow-input" id="sort-radio__inc" type="radio" name="sort-arrow"
+                        value="increase" checked>
                       <span class="visually-hidden"> По возрастанию </span>
-                      <svg height="10" width="10">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
                         <polygon points="10,0 5,10 0,0" />
                       </svg>
                     </label>
                   </li>
                   <li>
                     <label class="arrow" for="sort-radio__dec">
-                      <input class="visually-hidden arrow-input" id="sort-radio__dec" type="radio" name="sort-arrow" value="decrease">
+                      <input class="visually-hidden arrow-input" id="sort-radio__dec" type="radio" name="sort-arrow"
+                        value="decrease">
                       <span class="visually-hidden"> По убыванию </span>
-                      <svg height="10" width="10">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
                         <polygon points="10,10 5,0 0,10" />
                       </svg>
                     </label>
@@ -475,6 +495,7 @@
   <script src="js/func__closeModal.js"></script>
   <script src="js/func__showModal.js"></script>
   <script src="js/func__changeSlide.js"></script>
+  <script src="js/func__syncSliderValues.js"></script>
   <!-- <script src="js/func__.js"></script> -->
 
 </body>
