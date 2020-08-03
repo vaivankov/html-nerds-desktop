@@ -79,17 +79,17 @@
               <legend class="fieldset__title">Стоимость:</legend>
               <div class="price-slider">
                 <div class="slider-track" style="--left-value: 0; --right-value: 15000; --min: 0; --max: 20000;"></div>
-                <input class="price-slider-thumb" id="left-value" value="0" min="0" max="20000" step="100" type="range">
-                <input class="price-slider-thumb" id="right-value" value="15000" min="0" max="20000" step="100" type="range">
+                <input class="price-slider-thumb price-slider-min" id="left-value" value="0" min="0" max="20000" step="100" type="range">
+                <input class="price-slider-thumb price-slider-max" id="right-value" value="15000" min="0" max="20000" step="100" type="range">
               </div>
               <div class="price-input-wrapper">
                 <div class="price-input">
-                  <label class="price-input__label" for="price-min">От</label>
-                  <input class="button button--gray button--input price-min" value="0" name="price-min" min="0"
-                    max="20000" step="100" type="number" id="price-min">
-                  <label class="price-input__label" for="price-max">До</label>
-                  <input class="button button--gray button--input price-max" value="15000" name="price-max" min="0"
-                    max="20000" step="100" type="number" id="price-max">
+                  <label class="price-input__label" for="price-input-min">От</label>
+                  <input class="button button--gray button--input price-input-min" value="0" name="price-min" min="0"
+                    max="20000" step="100" type="number" id="price-input-min">
+                  <label class="price-input__label" for="price-input-max">До</label>
+                  <input class="button button--gray button--input price-input-max" value="15000" name="price-max" min="0"
+                    max="20000" step="100" type="number" id="price-input-max">
                 </div>
               </div>
             </fieldset>
@@ -496,6 +496,10 @@
   <script src="js/func__showModal.js"></script>
   <script src="js/func__changeSlide.js"></script>
   <script src="js/func__syncSliderValues.js"></script>
+  <script src="js/func__syncMaxPriceSliderNMaxPriceInput.js"></script>
+  <script src="js/func__syncMinPriceSliderNMinPriceInput.js"></script>
+  <script src="js/func__syncMaxInputNMaxSlider.js"></script>
+  <script src="js/func__syncMinInputNMinSlider.js"></script>
   <!-- <script src="js/func__.js"></script> -->
 
 </body>

@@ -2,13 +2,16 @@
 
 (function () {
   window.syncSliderValues = function (evt) {
-    let _sliderThumb = evt.target;
+    let _sliderThumb = this;
     let _sliderWrapper = _sliderThumb.closest(".price-slider");
     let _sliderTrack = _sliderWrapper.querySelector(".slider-track");
 
-    if (+sliderMin.value > +sliderMax.value) {
-      sliderMin.value = +sliderMax.value;
-      return;
+    if (+sliderPriceMin.value > +sliderPriceMax.value) {
+      sliderPriceMin.value = +sliderPriceMax.value;
+    }
+
+    if (+inputPriceMin.value > +inputPriceMax.value) {
+      inputPriceMin.value = +inputPriceMax.value;
     }
 
     _sliderTrack.style.setProperty(`--${_sliderThumb.id}`, +_sliderThumb.value);
@@ -16,5 +19,7 @@
   }
 })();
 
-sliderMin.addEventListener("input", syncSliderValues);
-sliderMax.addEventListener("input", syncSliderValues);
+sliderPriceMin.addEventListener("input", syncSliderValues);
+sliderPriceMax.addEventListener("input", syncSliderValues);
+inputPriceMin.addEventListener("input", syncSliderValues);
+inputPriceMax.addEventListener("input", syncSliderValues);

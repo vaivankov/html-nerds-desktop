@@ -134,11 +134,6 @@ img {
 	min-height: 130px;
 }
 
-.main-logo {
-}
-.main-logo__image {
-}
-
 .site-navigation {
 	display: flex;
 	justify-content: space-between;
@@ -177,9 +172,6 @@ img {
 
 .link__image {
 	margin-right: 20px;
-}
-
-.link__text {
 }
 
 .features-wrapper {
@@ -451,9 +443,6 @@ img {
 	width: 360px;
 }
 
-.company-in-numbers__image {
-}
-
 .company-in-numbers__list-title {
 	margin-top: 35px;
 
@@ -676,9 +665,6 @@ img {
 	margin-bottom: 45px;
 }
 
-.write-us__line--button {
-}
-
 .write-us__title {
 	font-size: 44px;
 	font-family: "robotobold";
@@ -781,9 +767,6 @@ img {
 
 .sort-wrapper {
 	width: 260px;
-}
-
-.sort {
 }
 
 .sort__submit-btn {
@@ -927,9 +910,6 @@ img {
 	display: flex;
 }
 
-.checkbox-indicator {
-}
-
 .button--gray {
 	background-color: var(--color-button);
 }
@@ -953,14 +933,8 @@ img {
 	font-family: "roboto";
 }
 
-.button--next {
-}
-
 .results-wrapper {
 	width: 760px;
-}
-
-.results {
 }
 
 .results__header {
@@ -1107,9 +1081,6 @@ input.sort-by:focus + label.sort-by {
 	background-color: var(--color-white);
 }
 
-.preview__image-wrapper {
-}
-
 .preview__image {
 	position: absolute;
 	bottom: 1px;
@@ -1194,10 +1165,6 @@ input.sort-by:focus + label.sort-by {
 	align-items: center;
 
 	text-transform: uppercase;
-}
-.price-max {
-}
-.price-min {
 }
 
 .show {

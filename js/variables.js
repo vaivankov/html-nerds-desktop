@@ -11,8 +11,7 @@ window.writeUsShow = document.querySelector('.feedback__button');
 
 window.sliderThumbs = document.querySelectorAll(".price-slider-thumb");
 
-window.sliderMin = document.querySelectorAll(".price-slider-thumb")[0];
-window.sliderMax = document.querySelectorAll(".price-slider-thumb")[1];
-
-window.priceInputMax = document.querySelector("#price-max");
-window.priceInputMin = document.querySelector("#price-min");
+window.inputPriceMin = document.querySelector(".price-input-min");
+window.inputPriceMax = document.querySelector(".price-input-max");
+window.sliderPriceMin = document.querySelector(".price-slider-min");
+window.sliderPriceMax = document.querySelector(".price-slider-max");
