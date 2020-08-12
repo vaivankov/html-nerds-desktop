@@ -80,9 +80,11 @@
               <div class="price-slider">
                 <div class="slider-track" style="--left-value: 0; --right-value: 15000; --min: 0; --max: 20000;"></div>
                 <label class="visually-hidden" for="left-value">Минимальная цена</label>
-                <input class="price-slider-thumb price-slider-min" id="left-value" value="0" min="0" max="20000" step="100" type="range">
+                <input class="price-slider-thumb price-slider-min" id="left-value" value="0" min="0" max="20000"
+                  step="100" type="range">
                 <label class="visually-hidden" for="right-value">Максимальная цена</label>
-                <input class="price-slider-thumb price-slider-max" id="right-value" value="15000" min="0" max="20000" step="100" type="range">
+                <input class="price-slider-thumb price-slider-max" id="right-value" value="15000" min="0" max="20000"
+                  step="100" type="range">
               </div>
               <div class="price-input-wrapper">
                 <div class="price-input">
@@ -90,8 +92,8 @@
                   <input class="button button--gray button--input price-input-min" value="0" name="price-min" min="0"
                     max="20000" step="100" type="number" id="price-input-min">
                   <label class="price-input__label" for="price-input-max">До</label>
-                  <input class="button button--gray button--input price-input-max" value="15000" name="price-max" min="0"
-                    max="20000" step="100" type="number" id="price-input-max">
+                  <input class="button button--gray button--input price-input-max" value="15000" name="price-max"
+                    min="0" max="20000" step="100" type="number" id="price-input-max">
                 </div>
               </div>
             </fieldset>
@@ -422,19 +424,19 @@
       <ul class="social">
         <li class="social__item">
           <a class="image-wrapper button button--rounded button--red" href="#">
-            <img class="social__image" width="26" height="15" src="svg/vk-icon.svg">
+            <img class="social__image" width="26" height="15" src="svg/vk-icon.svg" alt="Иконка Вконтакте">
           </a>
         </li>
 
         <li class="social__item">
           <a class="image-wrapper button button--rounded button--red" href="#">
-            <img class="social__image" width="12" height="22" src="svg/fb-icon.svg">
+            <img class="social__image" width="12" height="22" src="svg/fb-icon.svg" alt="Иконка Facebook">
           </a>
         </li>
 
         <li class="social__item">
           <a class="image-wrapper button button--rounded button--red" href="#">
-            <img class="social__image" width="21" height="21" src="svg/insta-icon.svg">
+            <img class="social__image" width="21" height="21" src="svg/insta-icon.svg" alt="Иконка Instagram">
           </a>
         </li>
       </ul>
@@ -453,9 +455,7 @@
     <div class="write-us__line write-us__line--header">
       <span class="write-us__title">Напишите нам</span>
       <button class="write-us__close button" data-window=".write-us">
-        <div class="image-wrapper">
-          <img width="21" height="21" src="svg/close-cross.svg" alt="Иконка закрытия">
-        </div>
+        <img width="21" height="21" src="svg/close-cross.svg" alt="Иконка закрытия">
       </button>
     </div>
 
@@ -465,7 +465,7 @@
 
         <div class="write-us__cell">
           <label class="input-title" for="write-us__name">Ваше имя:</label>
-          <input class="input" placeholder="Имя и фамилия" type="name" name="name" id="write-us__name" required>
+          <input class="input" placeholder="Имя и фамилия" type="text" name="name" id="write-us__name" required>
         </div>
 
         <div class="write-us__cell">
@@ -479,8 +479,8 @@
 
         <div class="write-us__cell">
           <label class="input-title" for="write-us__textarea">Тест письма:</label>
-          <textarea class="input write-us__textarea" placeholder="В свободной форме" type="text" name="text"
-            id="write-us__textarea" cols="30" rows="20" required></textarea>
+          <textarea class="input write-us__textarea" placeholder="В свободной форме" name="text" id="write-us__textarea"
+            cols="30" rows="20" required></textarea>
         </div>
 
       </div>
@@ -489,7 +489,7 @@
         <button class="write-us__button button button--red" type="submit">Отправить</button>
       </div>
 
-      </for>
+    </form>
 
   </div>
 

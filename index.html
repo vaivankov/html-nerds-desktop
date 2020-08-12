@@ -88,7 +88,6 @@
                   data-url="img/index-slider-slide1.png" data-slogan="Долго, дорого,<br>скрупулезно."
                   data-slogan-explanation="Математически выверенный дизайн<br>для вашего сайта или мобильного приложения."
                   data-img-alt="Три летящих телефона" onclick="changeSlide()" checked>
-                </input>
                 <span class="button button--slider"></span>
               </label>
             </li>
@@ -99,7 +98,6 @@
                   data-url="img/index-slider-slide2.png" data-slogan="Любим математику<br>как никто другой"
                   data-slogan-explanation="Никакого креатива, только математические формулы <br> для расчета идеальных пропорций."
                   data-img-alt="Два монитора, стоящие друг к другу тыльной стороной" onclick="changeSlide()">
-                </input>
                 <span class="button button--slider"></span>
               </label>
             </li>
@@ -110,7 +108,6 @@
                   data-url="img/index-slider-slide3.png" data-slogan="Только ночь,<br>только хардкор"
                   data-slogan-explanation="Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается."
                   data-img-alt="Летящий планшет и телефон" onclick="changeSlide()">
-                </input>
                 <span class="button button--slider"></span>
               </label>
             </li>
@@ -218,19 +215,20 @@
       <h2 class="visually-hidden">Проекты</h2>
 
       <a class="image-wrapper projects__container" href="#">
-        <img class="projects__image" width="199" height="68" src="svg/logo-htmlacademy.svg">
+        <img class="projects__image" width="199" height="68" src="svg/logo-htmlacademy.svg" alt="Логотип HTML academy">
       </a>
 
       <a class="image-wrapper projects__container" href="#">
-        <img class="projects__image" width="209" height="90" src="svg/logo-barbershop.svg">
+        <img class="projects__image" width="209" height="90" src="svg/logo-barbershop.svg"
+          alt="Логотип Барбершоп «Бородинский»">
       </a>
 
       <a class="image-wrapper projects__container" href="#">
-        <img class="projects__image" width="185" height="52" src="svg/logo-pink.svg">
+        <img class="projects__image" width="185" height="52" src="svg/logo-pink.svg" alt="Логотип PINK">
       </a>
 
       <a class="image-wrapper projects__container" href="#">
-        <img class="projects__image" width="173" height="84" src="svg/logo-mishka.svg">
+        <img class="projects__image" width="173" height="84" src="svg/logo-mishka.svg" alt="Логотип MISHKA">
       </a>
 
     </section>
@@ -267,19 +265,19 @@
       <ul class="social">
         <li class="social__item">
           <a class="image-wrapper button button--rounded button--red" href="#">
-            <img class="social__image" width="26" height="15" src="svg/vk-icon.svg">
+            <img class="social__image" width="26" height="15" src="svg/vk-icon.svg" alt="Иконка Вконтакте">
           </a>
         </li>
 
         <li class="social__item">
           <a class="image-wrapper button button--rounded button--red" href="#">
-            <img class="social__image" width="12" height="22" src="svg/fb-icon.svg">
+            <img class="social__image" width="12" height="22" src="svg/fb-icon.svg" alt="Иконка Facebook">
           </a>
         </li>
 
         <li class="social__item">
           <a class="image-wrapper button button--rounded button--red" href="#">
-            <img class="social__image" width="21" height="21" src="svg/insta-icon.svg">
+            <img class="social__image" width="21" height="21" src="svg/insta-icon.svg" alt="Иконка Instagram">
           </a>
         </li>
       </ul>
@@ -298,9 +296,7 @@
     <div class="write-us__line write-us__line--header">
       <span class="write-us__title">Напишите нам</span>
       <button class="write-us__close button" data-window=".write-us">
-        <div class="image-wrapper">
-          <img width="21" height="21" src="svg/close-cross.svg" alt="Иконка закрытия">
-        </div>
+        <img width="21" height="21" src="svg/close-cross.svg" alt="Иконка закрытия">
       </button>
     </div>
 
@@ -310,7 +306,7 @@
 
         <div class="write-us__cell">
           <label class="input-title" for="write-us__name">Ваше имя:</label>
-          <input class="input" placeholder="Имя и фамилия" type="name" name="name" id="write-us__name" required>
+          <input class="input" placeholder="Имя и фамилия" type="text" name="name" id="write-us__name" required>
         </div>
 
         <div class="write-us__cell">
@@ -324,8 +320,8 @@
 
         <div class="write-us__cell">
           <label class="input-title" for="write-us__textarea">Тест письма:</label>
-          <textarea class="input write-us__textarea" placeholder="В свободной форме" type="text" name="text"
-            id="write-us__textarea" cols="30" rows="20" required></textarea>
+          <textarea class="input write-us__textarea" placeholder="В свободной форме" name="text" id="write-us__textarea"
+            cols="30" rows="20" required></textarea>
         </div>
 
       </div>
@@ -334,7 +330,7 @@
         <button class="write-us__button button button--red" type="submit">Отправить</button>
       </div>
 
-      </for>
+    </form>
 
   </div>
 
