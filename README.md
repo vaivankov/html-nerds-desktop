@@ -1,5 +1,10 @@
 # Nёrds
+
 Проект десктопного сайта дизайн-студии Nёrds
+
+- Адаптивность: desktop
+
+- Кроссбраузерность: Blink, Gecko, WebKit
 
 Автор макета: [HTML Academy](https://htmlacademy.ru/)
 
