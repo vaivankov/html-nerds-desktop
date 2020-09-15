@@ -1,345 +1,488 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Nёrd's</title>
-</head>
-
-<body>
-
-  <h1 class="visually-hidden">Сайт дизайн-студии Nёrd's</h1>
-
-  <header class="site-header-wrapper">
-
-    <h2 class="visually-hidden">Шапка сайта</h2>
-
-    <div class="container site-header">
-
-      <a class="main-logo" href="index.html">
-        <img class="main-logo__image" width="160" height="65" src="svg/nerds-logo.svg" alt="Логотип компании Nёrd's">
-      </a>
-
-      <div class="site-navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation__item-wrapper">
-            <a class="link" href="catalog.html">Магазин</a>
-          </li>
-          <li class="site-navigation__item-wrapper">
-            <a class="link" href="#">Студия</a>
-          </li>
-          <li class="site-navigation__item-wrapper">
-            <a class="link" href="#">Клиенты</a>
-          </li>
-          <li class="site-navigation__item-wrapper">
-            <a class="link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="user-navigation">
-        <ul class="user-navigation">
-          <li class="user-navigation__item-wrapper">
-            <a class="link" href="#">
-              <div class="image-wrapper">
-                <img class="link__image" width="21" height="20" src="svg/basket.svg" alt="Иконка корзины">
-                <span class="link__text">Корзина</span>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-  </header>
-
-
-  <main>
-
-
-    <section class="features-wrapper">
-
-      <h2 class="visually-hidden">Преимущества компании</h2>
-
-      <div class="container features">
-
-        <div class="features__information">
-          <div class="features__slogan">Долго, дорого,<br>скрупулезно.</div>
-          <div class="features__slogan-explanation">Математически выверенный дизайн<br>для вашего сайта или мобильного
-            приложения.</div>
-          <button class="features__button button button--red">Узнать больше</button>
-        </div>
-
-        <div class="features__image-wrapper">
-          <img class="features__image" width="698" height="413" src="img/index-slider-slide1.png"
-            alt="Три летящих телефона">
-        </div>
-
-        <div class="features__slider">
-          <ul class="features__slider">
-            <li class="features__slider-wrapper">
-              <label>
-                <span class="visually-hidden">Слайд 1</span>
-                <input class="visually-hidden features-slider" name="features-slider" type="radio"
-                  data-url="img/index-slider-slide1.png" data-slogan="Долго, дорого,<br>скрупулезно."
-                  data-slogan-explanation="Математически выверенный дизайн<br>для вашего сайта или мобильного приложения."
-                  data-img-alt="Три летящих телефона" onclick="changeSlide()" checked>
-                <span class="button button--slider"></span>
-              </label>
-            </li>
-            <li class="features__slider-wrapper">
-              <label>
-                <span class="visually-hidden">Слайд 2</span>
-                <input class="visually-hidden features-slider" name="features-slider" type="radio"
-                  data-url="img/index-slider-slide2.png" data-slogan="Любим математику<br>как никто другой"
-                  data-slogan-explanation="Никакого креатива, только математические формулы <br> для расчета идеальных пропорций."
-                  data-img-alt="Два монитора, стоящие друг к другу тыльной стороной" onclick="changeSlide()">
-                <span class="button button--slider"></span>
-              </label>
-            </li>
-            <li class="features__slider-wrapper">
-              <label>
-                <span class="visually-hidden">Слайд 3</span>
-                <input class="visually-hidden features-slider" name="features-slider" type="radio"
-                  data-url="img/index-slider-slide3.png" data-slogan="Только ночь,<br>только хардкор"
-                  data-slogan-explanation="Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается."
-                  data-img-alt="Летящий планшет и телефон" onclick="changeSlide()">
-                <span class="button button--slider"></span>
-              </label>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-
-    </section>
-
-    <section class="container offer">
-
-      <h2 class="visually-hidden">Выполняемые работы</h2>
-
-      <div class="offer-item">
-        <div class="image-wrapper">
-          <div class="image-wrapper__background">
-            <img width="300" height="146" src="img/advantages-illustration1.png"
-              alt="Раскрытый ноутбук на красном фоне">
-          </div>
-        </div>
-        <div class="offer-item__title">Веб-сайты</div>
-        <div class="offer-item__text">Мир никогда не будет прежним <br> после того как увидит ваш сайт!</div>
-        <button class="offer-item__button button button--red" type="button">Заказать</button>
-      </div>
-
-      <div class="offer-item">
-        <div class="image-wrapper">
-          <div class="image-wrapper__background">
-            <img width="300" height="146" src="img/advantages-illustration2.png" alt="Два смартфона на зелёном фоне">
-          </div>
-        </div>
-        <div class="offer-item__title">Приложения</div>
-        <div class="offer-item__text">Покорите топ-10 приложений в <br> AppStore и Google Play</div>
-        <button class="offer-item__button button button--green" type="button">Заказать</button>
-      </div>
-
-      <div class="offer-item">
-        <div class="image-wrapper">
-          <div class="image-wrapper__background">
-            <img width="300" height="146" src="img/advantages-illustration3.png"
-              alt="Стойка с презентацией на жёлтом фоне">
-          </div>
-        </div>
-        <div class="offer-item__title">Презентации</div>
-        <div class="offer-item__text">Вы даже не подозреваете, <br> насколько вы изумительны!</div>
-        <button class="offer-item__button button button--yellow" type="button">Заказать</button>
-      </div>
-
-    </section>
-
-    <section class="container about">
-
-      <h2 class="visually-hidden">О компании</h2>
-
-      <div class="company-info">
-
-        <h3 class="visually-hidden">Описание компании</h3>
-
-        <div class="company-info__title">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</div>
-        <p class="company-info__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
-          креатива. Работаем не покладая рук, как роботы.</p>
-        <div class="company-info__list-title">Выполняем заказы на разработку:</div>
-        <ul class="company-info__list">
-          <li class="company-info__list-item">Веб-сайтов любой сложности</li>
-          <li class="company-info__list-item">Мобильных приложений для iOS и Android</li>
-          <li class="company-info__list-item">Слайд-шоу и видео для корпоративных презентаций</li>
-        </ul>
-
-      </div>
-
-      <div class="company-in-numbers">
-
-        <h3 class="visually-hidden">Компания в цифрах</h3>
-
-        <div class="image-wrapper">
-          <div class="image-wrapper__background">
-            <img class="company-in-numbers__image" width="360" height="208" src="img/nerds-illustration.png"
-              alt="Логотип компании в украшениях">
-          </div>
-        </div>
-        <div class="company-in-numbers__list-title">С 2004 года любим точность во всем:</div>
-        <ul class="company-in-numbers__list">
-          <li class="company-in-numbers__list-item">
-            <div class="company-in-numbers__percent">146<sup>%</sup></div>
-            <div class="company-in-numbers__text">Уровень самоотдачи</div>
-          </li>
-          <li class="company-in-numbers__list-item">
-            <div class="company-in-numbers__percent">100<sup>%</sup></div>
-            <div class="company-in-numbers__text">Соблюдение сроков</div>
-          </li>
-          <li class="company-in-numbers__list-item">
-            <div class="company-in-numbers__percent">50<sup>%</sup></div>
-            <div class="company-in-numbers__text">Минимальная предоплата</div>
-          </li>
-        </ul>
-
-      </div>
-
-    </section>
-
-    <section class="container projects">
-
-      <h2 class="visually-hidden">Проекты</h2>
-
-      <a class="image-wrapper projects__container" href="#">
-        <img class="projects__image" width="199" height="68" src="svg/logo-htmlacademy.svg" alt="Логотип HTML academy">
-      </a>
-
-      <a class="image-wrapper projects__container" href="#">
-        <img class="projects__image" width="209" height="90" src="svg/logo-barbershop.svg"
-          alt="Логотип Барбершоп «Бородинский»">
-      </a>
-
-      <a class="image-wrapper projects__container" href="#">
-        <img class="projects__image" width="185" height="52" src="svg/logo-pink.svg" alt="Логотип PINK">
-      </a>
-
-      <a class="image-wrapper projects__container" href="#">
-        <img class="projects__image" width="173" height="84" src="svg/logo-mishka.svg" alt="Логотип MISHKA">
-      </a>
-
-    </section>
-
-    <section class="map">
-
-      <h2 class="visually-hidden">Адрес компании</h2>
-
-      <div class="container">
-
-        <div class="feedback">
-          <div class="feedback__title">Nёrds design studio</div>
-          <div class="feedback__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</div>
-          <div class="feedback__tel">
-            <a class="feedback__tel link" href="tel:+74954959595">тел. +7 (495) 495-95-95</a>
-          </div>
-          <button class="feedback__button button button--red" type="button" data-window=".write-us">Напишите
-            нам</button>
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <footer class="container footer">
-
-    <h2 class="visually-hidden">Подвал сайта</h2>
-
-    <div class="social">
-
-      <ul class="social">
-        <li class="social__item">
-          <a class="image-wrapper button button--rounded button--red" href="#">
-            <img class="social__image" width="26" height="15" src="svg/vk-icon.svg" alt="Иконка Вконтакте">
-          </a>
-        </li>
-
-        <li class="social__item">
-          <a class="image-wrapper button button--rounded button--red" href="#">
-            <img class="social__image" width="12" height="22" src="svg/fb-icon.svg" alt="Иконка Facebook">
-          </a>
-        </li>
-
-        <li class="social__item">
-          <a class="image-wrapper button button--rounded button--red" href="#">
-            <img class="social__image" width="21" height="21" src="svg/insta-icon.svg" alt="Иконка Instagram">
-          </a>
-        </li>
-      </ul>
-
-    </div>
-
-    <div class="discount">
-      <div class="discount__slogan">Давайте дружить, это выгодно!</div>
-      <div class="discount__slogan-explanation">Скидка 10% для друзей из социальных сетей.</div>
-    </div>
-
-  </footer>
-
-  <div class="modal write-us">
-
-    <div class="write-us__line write-us__line--header">
-      <span class="write-us__title">Напишите нам</span>
-      <button class="write-us__close button" data-window=".write-us">
-        <img width="21" height="21" src="svg/close-cross.svg" alt="Иконка закрытия">
-      </button>
-    </div>
-
-    <form class="write-us__form" action="https://echo.htmlacademy.ru" method="POST">
-
-      <div class="write-us__line write-us__line--contacts">
-
-        <div class="write-us__cell">
-          <label class="input-title" for="write-us__name">Ваше имя:</label>
-          <input class="input" placeholder="Имя и фамилия" type="text" name="name" id="write-us__name" required>
-        </div>
-
-        <div class="write-us__cell">
-          <label class="input-title" for="write-us__email">Ваш e-mail:</label>
-          <input class="input" placeholder="yourmail@mail.com" type="email" name="email" id="write-us__email" required>
-        </div>
-
-      </div>
-
-      <div class="write-us__line write-us__line--message">
-
-        <div class="write-us__cell">
-          <label class="input-title" for="write-us__textarea">Тест письма:</label>
-          <textarea class="input write-us__textarea" placeholder="В свободной форме" name="text" id="write-us__textarea"
-            cols="30" rows="20" required></textarea>
-        </div>
-
-      </div>
-
-      <div class="write-us__line write-us__line--button">
-        <button class="write-us__button button button--red" type="submit">Отправить</button>
-      </div>
-
-    </form>
-
-  </div>
-
-  <script src="js/variables.js"></script>
-  <script src="js/func__closeModal.js"></script>
-  <script src="js/func__showModal.js"></script>
-  <script src="js/func__changeSlide.js"></script>
-  <!-- <script src="js/func__.js"></script> -->
-
-</body>
-
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Nёrd's</title>
+	</head>
+
+	<body>
+		<h1 class="visually-hidden">Сайт дизайн-студии Nёrd's</h1>
+
+		<header class="site-header-wrapper">
+			<h2 class="visually-hidden">Шапка сайта</h2>
+
+			<div class="container site-header">
+				<a class="main-logo" href="index.html">
+					<img
+						class="main-logo__image"
+						width="160"
+						height="65"
+						src="svg/nerds-logo.svg"
+						alt="Логотип компании Nёrd's"
+					/>
+				</a>
+
+				<div class="site-navigation">
+					<ul class="site-navigation">
+						<li class="site-navigation__item-wrapper">
+							<a class="link" href="catalog.html">Магазин</a>
+						</li>
+						<li class="site-navigation__item-wrapper">
+							<a class="link" href="#">Студия</a>
+						</li>
+						<li class="site-navigation__item-wrapper">
+							<a class="link" href="#">Клиенты</a>
+						</li>
+						<li class="site-navigation__item-wrapper">
+							<a class="link" href="#">Контакты</a>
+						</li>
+						<li class="site-navigation__item-wrapper">
+							<a class="link" href="https://htmlacademy.ru/intensive/htmlcss"
+								>HTML Academy</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="user-navigation">
+					<ul class="user-navigation">
+						<li class="user-navigation__item-wrapper">
+							<a class="link" href="#">
+								<div class="image-wrapper">
+									<img
+										class="link__image"
+										width="21"
+										height="20"
+										src="svg/basket.svg"
+										alt="Иконка корзины"
+									/>
+									<span class="link__text">Корзина</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="features-wrapper">
+				<h2 class="visually-hidden">Преимущества компании</h2>
+
+				<div class="container features">
+					<div class="features__information">
+						<div class="features__slogan">Долго, дорого,<br />скрупулезно.</div>
+						<div class="features__slogan-explanation">
+							Математически выверенный дизайн<br />для вашего сайта или
+							мобильного приложения.
+						</div>
+						<button class="features__button button button--red">
+							Узнать больше
+						</button>
+					</div>
+
+					<div class="features__image-wrapper">
+						<img
+							class="features__image"
+							width="698"
+							height="413"
+							src="img/index-slider-slide1.png"
+							alt="Три летящих телефона"
+						/>
+					</div>
+
+					<div class="features__slider">
+						<ul class="features__slider">
+							<li class="features__slider-wrapper">
+								<label>
+									<span class="visually-hidden">Слайд 1</span>
+									<input
+										class="visually-hidden features-slider"
+										name="features-slider"
+										type="radio"
+										data-url="img/index-slider-slide1.png"
+										data-slogan="Долго, дорого,<br>скрупулезно."
+										data-slogan-explanation="Математически выверенный дизайн<br>для вашего сайта или мобильного приложения."
+										data-img-alt="Три летящих телефона"
+										onclick="changeSlide()"
+										checked
+									/>
+									<span class="button button--slider"></span>
+								</label>
+							</li>
+							<li class="features__slider-wrapper">
+								<label>
+									<span class="visually-hidden">Слайд 2</span>
+									<input
+										class="visually-hidden features-slider"
+										name="features-slider"
+										type="radio"
+										data-url="img/index-slider-slide2.png"
+										data-slogan="Любим математику<br>как никто другой"
+										data-slogan-explanation="Никакого креатива, только математические формулы <br> для расчета идеальных пропорций."
+										data-img-alt="Два монитора, стоящие друг к другу тыльной стороной"
+										onclick="changeSlide()"
+									/>
+									<span class="button button--slider"></span>
+								</label>
+							</li>
+							<li class="features__slider-wrapper">
+								<label>
+									<span class="visually-hidden">Слайд 3</span>
+									<input
+										class="visually-hidden features-slider"
+										name="features-slider"
+										type="radio"
+										data-url="img/index-slider-slide3.png"
+										data-slogan="Только ночь,<br>только хардкор"
+										data-slogan-explanation="Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается."
+										data-img-alt="Летящий планшет и телефон"
+										onclick="changeSlide()"
+									/>
+									<span class="button button--slider"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="container offer">
+				<h2 class="visually-hidden">Выполняемые работы</h2>
+
+				<div class="offer-item">
+					<div class="image-wrapper">
+						<div class="image-wrapper__background">
+							<img
+								width="300"
+								height="146"
+								src="img/advantages-illustration1.png"
+								alt="Раскрытый ноутбук на красном фоне"
+							/>
+						</div>
+					</div>
+					<div class="offer-item__title">Веб-сайты</div>
+					<div class="offer-item__text">
+						Мир никогда не будет прежним <br />
+						после того как увидит ваш сайт!
+					</div>
+					<button class="offer-item__button button button--red" type="button">
+						Заказать
+					</button>
+				</div>
+
+				<div class="offer-item">
+					<div class="image-wrapper">
+						<div class="image-wrapper__background">
+							<img
+								width="300"
+								height="146"
+								src="img/advantages-illustration2.png"
+								alt="Два смартфона на зелёном фоне"
+							/>
+						</div>
+					</div>
+					<div class="offer-item__title">Приложения</div>
+					<div class="offer-item__text">
+						Покорите топ-10 приложений в <br />
+						AppStore и Google Play
+					</div>
+					<button class="offer-item__button button button--green" type="button">
+						Заказать
+					</button>
+				</div>
+
+				<div class="offer-item">
+					<div class="image-wrapper">
+						<div class="image-wrapper__background">
+							<img
+								width="300"
+								height="146"
+								src="img/advantages-illustration3.png"
+								alt="Стойка с презентацией на жёлтом фоне"
+							/>
+						</div>
+					</div>
+					<div class="offer-item__title">Презентации</div>
+					<div class="offer-item__text">
+						Вы даже не подозреваете, <br />
+						насколько вы изумительны!
+					</div>
+					<button
+						class="offer-item__button button button--yellow"
+						type="button"
+					>
+						Заказать
+					</button>
+				</div>
+			</section>
+
+			<section class="container about">
+				<h2 class="visually-hidden">О компании</h2>
+
+				<div class="company-info">
+					<h3 class="visually-hidden">Описание компании</h3>
+
+					<div class="company-info__title">
+						Мы — маленькая, но гордая<br />дизайн-студия из Краснодара.
+					</div>
+					<p class="company-info__text">
+						Исповедуем принципы минимализма и чистоты. Ставим математический
+						расчет превыше креатива. Работаем не покладая рук, как роботы.
+					</p>
+					<div class="company-info__list-title">
+						Выполняем заказы на разработку:
+					</div>
+					<ul class="company-info__list">
+						<li class="company-info__list-item">Веб-сайтов любой сложности</li>
+						<li class="company-info__list-item">
+							Мобильных приложений для iOS и Android
+						</li>
+						<li class="company-info__list-item">
+							Слайд-шоу и видео для корпоративных презентаций
+						</li>
+					</ul>
+				</div>
+
+				<div class="company-in-numbers">
+					<h3 class="visually-hidden">Компания в цифрах</h3>
+
+					<div class="image-wrapper">
+						<div class="image-wrapper__background">
+							<img
+								class="company-in-numbers__image"
+								width="360"
+								height="208"
+								src="img/nerds-illustration.png"
+								alt="Логотип компании в украшениях"
+							/>
+						</div>
+					</div>
+					<div class="company-in-numbers__list-title">
+						С 2004 года любим точность во всем:
+					</div>
+					<ul class="company-in-numbers__list">
+						<li class="company-in-numbers__list-item">
+							<div class="company-in-numbers__percent">146<sup>%</sup></div>
+							<div class="company-in-numbers__text">Уровень самоотдачи</div>
+						</li>
+						<li class="company-in-numbers__list-item">
+							<div class="company-in-numbers__percent">100<sup>%</sup></div>
+							<div class="company-in-numbers__text">Соблюдение сроков</div>
+						</li>
+						<li class="company-in-numbers__list-item">
+							<div class="company-in-numbers__percent">50<sup>%</sup></div>
+							<div class="company-in-numbers__text">Минимальная предоплата</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="container projects">
+				<h2 class="visually-hidden">Проекты</h2>
+
+				<a class="image-wrapper projects__container" href="#">
+					<img
+						class="projects__image"
+						width="199"
+						height="68"
+						src="svg/logo-htmlacademy.svg"
+						alt="Логотип HTML academy"
+					/>
+				</a>
+
+				<a class="image-wrapper projects__container" href="#">
+					<img
+						class="projects__image"
+						width="209"
+						height="90"
+						src="svg/logo-barbershop.svg"
+						alt="Логотип Барбершоп «Бородинский»"
+					/>
+				</a>
+
+				<a class="image-wrapper projects__container" href="#">
+					<img
+						class="projects__image"
+						width="185"
+						height="52"
+						src="svg/logo-pink.svg"
+						alt="Логотип PINK"
+					/>
+				</a>
+
+				<a class="image-wrapper projects__container" href="#">
+					<img
+						class="projects__image"
+						width="173"
+						height="84"
+						src="svg/logo-mishka.svg"
+						alt="Логотип MISHKA"
+					/>
+				</a>
+			</section>
+
+			<section class="map">
+				<h2 class="visually-hidden">Адрес компании</h2>
+
+				<div class="container">
+					<div class="feedback">
+						<div class="feedback__title">Nёrds design studio</div>
+						<div class="feedback__address">
+							191186, Санкт-Петербург,<br />ул. Б. Конюшенная, д. 19/8
+						</div>
+						<div class="feedback__tel">
+							<a class="feedback__tel link" href="tel:+74954959595"
+								>тел. +7 (495) 495-95-95</a
+							>
+						</div>
+						<button
+							class="feedback__button button button--red"
+							type="button"
+							data-window=".write-us"
+						>
+							Напишите нам
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="container footer">
+			<h2 class="visually-hidden">Подвал сайта</h2>
+
+			<div class="social">
+				<ul class="social">
+					<li class="social__item">
+						<a
+							class="image-wrapper button button--rounded button--red"
+							href="#"
+						>
+							<img
+								class="social__image"
+								width="26"
+								height="15"
+								src="svg/vk-icon.svg"
+								alt="Иконка Вконтакте"
+							/>
+						</a>
+					</li>
+
+					<li class="social__item">
+						<a
+							class="image-wrapper button button--rounded button--red"
+							href="#"
+						>
+							<img
+								class="social__image"
+								width="12"
+								height="22"
+								src="svg/fb-icon.svg"
+								alt="Иконка Facebook"
+							/>
+						</a>
+					</li>
+
+					<li class="social__item">
+						<a
+							class="image-wrapper button button--rounded button--red"
+							href="#"
+						>
+							<img
+								class="social__image"
+								width="21"
+								height="21"
+								src="svg/insta-icon.svg"
+								alt="Иконка Instagram"
+							/>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="discount">
+				<div class="discount__slogan">Давайте дружить, это выгодно!</div>
+				<div class="discount__slogan-explanation">
+					Скидка 10% для друзей из социальных сетей.
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal write-us">
+			<div class="write-us__line write-us__line--header">
+				<span class="write-us__title">Напишите нам</span>
+				<button class="write-us__close button" data-window=".write-us">
+					<img
+						width="21"
+						height="21"
+						src="svg/close-cross.svg"
+						alt="Иконка закрытия"
+					/>
+				</button>
+			</div>
+
+			<form
+				class="write-us__form"
+				action="https://echo.htmlacademy.ru"
+				method="POST"
+			>
+				<div class="write-us__line write-us__line--contacts">
+					<div class="write-us__cell">
+						<label class="input-title" for="write-us__name">Ваше имя:</label>
+						<input
+							class="input"
+							placeholder="Имя и фамилия"
+							type="text"
+							name="name"
+							id="write-us__name"
+							required
+						/>
+					</div>
+
+					<div class="write-us__cell">
+						<label class="input-title" for="write-us__email">Ваш e-mail:</label>
+						<input
+							class="input"
+							placeholder="yourmail@mail.com"
+							type="email"
+							name="email"
+							id="write-us__email"
+							required
+						/>
+					</div>
+				</div>
+
+				<div class="write-us__line write-us__line--message">
+					<div class="write-us__cell">
+						<label class="input-title" for="write-us__textarea"
+							>Тест письма:</label
+						>
+						<textarea
+							class="input write-us__textarea"
+							placeholder="В свободной форме"
+							name="text"
+							id="write-us__textarea"
+							cols="30"
+							rows="20"
+							required
+						></textarea>
+					</div>
+				</div>
+
+				<div class="write-us__line write-us__line--button">
+					<button class="write-us__button button button--red" type="submit">
+						Отправить
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<script src="js/variables.js"></script>
+		<script src="js/func__closeModal.js"></script>
+		<script src="js/func__showModal.js"></script>
+		<script src="js/func__changeSlide.js"></script>
+	</body>
 </html>
