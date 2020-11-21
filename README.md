@@ -8,4 +8,4 @@
 
 Автор макета: [HTML Academy](https://htmlacademy.ru/)
 
-Главная страница: [nerds](https://vaivankov.github.io/nerds/)
+Главная страница: [nerds](https://vaivankov.github.io/html-nerds-desktop/)
